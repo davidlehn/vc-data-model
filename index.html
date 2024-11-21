@@ -2019,11 +2019,11 @@ If present, the value of the `validUntil` [=property=] MUST be a
 [<a data-cite="XMLSCHEMA11-2#dateTimeStamp">XMLSCHEMA11-2</a>]
 `dateTimeStamp` string value representing the date and time the
 [=credential=] ceases to be valid, which could be a date and time in the past
-or the future. Note that this value represents the latest point in time at
+or the future. Note that this value represents the earliest point in time at
 which the information associated with the `credentialSubject`
-[=property=] is valid. If a `validFrom` value also exists, the `validUntil`
-value MUST express a point in time that is temporally the same or later than the
-point in time expressed by the `validFrom` value.
+[=property=] ceases to be valid. If a `validFrom` value also exists, the
+`validUntil` value MUST express a point in time that is temporally the same or
+later than the point in time expressed by the `validFrom` value.
           </dd>
         </dl>
 
